@@ -1,13 +1,8 @@
-import 'package:adv_basics_app/startpage.dart';
 import 'package:flutter/material.dart';
+import 'package:adv_basics_app/quiz.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 93, 6, 245),
-        body: StartPage(),
-      ),
-    ),
+    const Quiz()
   );
 }
