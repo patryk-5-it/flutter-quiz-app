@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:google_fonts/google_fonts.dart';
+
 class StartPage extends StatelessWidget {
   const StartPage(this.startQuiz, {super.key});
 
@@ -17,12 +19,9 @@ class StartPage extends StatelessWidget {
             color: const Color.fromARGB(175, 255, 255, 255),
           ),
           SizedBox(height: 50),
-          const Text(
+          Text(
             "Quiz wiedzy o Flutter",
-            style: TextStyle(
-              color: Color.fromARGB(255, 255, 231, 255),
-              fontSize: 24,
-            ),
+            style: GoogleFonts.lato(color: Colors.white, fontSize: 24),
           ),
           SizedBox(height: 50),
           OutlinedButton.icon(
@@ -31,9 +30,9 @@ class StartPage extends StatelessWidget {
               startQuiz();
             },
             icon: const Icon(Icons.arrow_right_alt),
-            label: const Text(
+            label: Text(
               "Rozpocznij quiz",
-              style: TextStyle(fontSize: 20),
+              style: GoogleFonts.lato(color: Colors.white, fontSize: 20),
             ),
           ),
         ],

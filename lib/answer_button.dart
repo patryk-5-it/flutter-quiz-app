@@ -18,6 +18,6 @@ class AnswerButton extends StatelessWidget {
         shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
       ),
-      onPressed: onTap, child: Text(answerText));
+      onPressed: onTap, child: Text(answerText, textAlign: TextAlign.center,));
   }
 }
