@@ -5,7 +5,9 @@ import 'package:adv_basics_app/data/questions.dart';
 import 'package:adv_basics_app/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
-  const ResultsScreen({super.key, required this.choosenAnswers});
+  const ResultsScreen({super.key, required this.choosenAnswers, required this.onRestartQuiz});
+
+  final void Function() onRestartQuiz;
 
   final List<String> choosenAnswers;
 
@@ -49,7 +51,7 @@ class ResultsScreen extends StatelessWidget {
             QuestionsSummary(summaryData),
             const SizedBox(height: 30),
             TextButton.icon(
-              onPressed: () {},
+              onPressed: onRestartQuiz,
               icon: const Icon(Icons.refresh),
               label: const Text('Od nowa!'),
               style: TextButton.styleFrom(
