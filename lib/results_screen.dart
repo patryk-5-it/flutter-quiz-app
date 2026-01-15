@@ -56,7 +56,7 @@ class ResultsScreen extends StatelessWidget {
               label: const Text('Od nowa!'),
               style: TextButton.styleFrom(
                 foregroundColor: Colors.white,
-                textStyle: const TextStyle(fontSize: 16),
+                textStyle: const TextStyle(fontSize: 18),
               ),
             ),
           ],
